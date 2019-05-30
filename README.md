@@ -8,6 +8,13 @@ And then you must make a login (this will web-prompt you tou authorize firebase 
 
 * `firebase login`
 
+Then do:
+
+* `firebase init`
+
+Check all the options, except 'Database' and follow the instructions. Don't overwrite the configuration files
+and make `dist` folder your public folder.
+
 ## Base configuration
 
 The application has a firebase initialization for you. You only has to include your firebase project
@@ -70,6 +77,7 @@ I have preconfig your you some rules to make the Ember Single Page Application w
 
 Now, you are ready to deploy your app to Firebase:
 
+* `ember build`
 * `firebase deploy`
 
 It will gives you an url. Checks everything is ok!
