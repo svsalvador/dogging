@@ -3,6 +3,7 @@
 # compiled output
 /dist/
 /tmp/
+/.firebase
 
 # dependencies
 /bower_components/
