@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-header">
+    {{@user.name}}
+  </div>
+  <img src={{picUrl}} class="card-img-top w-100" alt="Dog image for {{@user.dogName}}">
+  <div class="card-body">
+    <h5 class="card-title">{{@user.dogName}}</h5>
+    <p class="card-text">
+      {{@user.dogDescription}}
+    </p>
+    <div class="mt-4 form-group row">
+      <div class="col-12 text-right">
+        <button class="btn btn-primary px-4 shadow-sm" {{action "likeIt"}}>Like it</button>
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      {{#if user.match}}
+        {{@user.email}}
+      {{/if}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h1 class="my-5 text-center">Sign up</h1>
+      <div>
+        <div class="form-group">
+          {{input value=name type="text" class="form-control shadow-sm" id="name" aria-describedby="nameHelp"
+            placeholder="Enter your name"}}
+        </div>
+        <div class="form-group">
+          {{input value=email type="email" class="form-control shadow-sm" id="email" aria-describedby="emailHelp"
+            placeholder="Enter email"}}
+        </div>
+        <div class="form-group">
+          {{input value=password type="password" class="form-control shadow-sm" id="password" placeholder="Enter new password"}}
+        </div>
+        <div class="form-group">
+          {{input value=dogName type="text" class="form-control shadow-sm" id="dog-name" aria-describedby="dogNameHelp"
+            placeholder="Enter the name of your dog"}}
+        </div>
+        <div class="form-group">
+          {{textarea
+              value=dogDescription 
+              class="form-control shadow-sm" 
+              id="dog-description" 
+              cols="80" 
+              rows="4"
+              aria-describedby="dogDescriptionHelp"
+              placeholder="Describe your dog"}}
+        </div>
+        <div class="form-group">
+          <label for="dog-pic">Upload a pic for your dog:</label>
+          <input type="file" id="dog-pic">
+        </div>
+        <div class="mt-5 form-group row">
+          <div class="col-6 text-center">
+            {{#link-to "index" class="stretched-link align-middle"}}
+              Return
+            {{/link-to}}
+          </div>
+          <div class="col-6 text-center">
+            <button {{action "createUser"}} class="btn btn-primary px-4 shadow-sm">Sign up!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
